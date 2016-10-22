@@ -68,13 +68,13 @@
     </nav>
 
     <!-- Intro Section -->
-    <section id="intro" class="intro-section">
-        <div class="container">
+    <section id="intro" class="intro-section" >
+        <div class="container" >
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Scrolling Nav</h1>
-                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
                     <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
+
                 </div>
             </div>
         </div>
@@ -98,18 +98,59 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Input form</h1>
-<div class="input-group-btn select" id="select1">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="selected">One</span> <span class="caret"></span></button>
-    <ul class="dropdown-menu option" role="menu">
-    <li id="1"><a href="#">Choose a degree</a></li>
-    <li id="2"><a href="#">Math</a></li>
-    <li id="1"><a href="#">Programming</a></li>
-    <li id="2"><a href="#">Arts - painting, history of art</a></li>
-    <li id="1"><a href="#">5</a></li>
-    <li id="2"><a href="#">6</a></li>
-    </ul>
-</div>
+                    <form id="contact-form" method="post" action="contact.php" role="form">
 
+                                            <div class="messages"></div>
+
+                                            <div class="controls">
+
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="form_name">Firstname *</label>
+                                                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                                            <div class="help-block with-errors"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="form_lastname">Lastname *</label>
+                                                            <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                                            <div class="help-block with-errors"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="form_email">Email *</label>
+                                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                                            <div class="help-block with-errors"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="form_phone">Phone</label>
+                                                            <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                                            <div class="help-block with-errors"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+
+
+
+
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <p class="text-muted"><strong>*</strong> These fields are required. Contact form template by <a href="http://bootstrapious.com" target="_blank">Bootstrapious</a>.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </form>
                 </div>
             </div>
         </div>
