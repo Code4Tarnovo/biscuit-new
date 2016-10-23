@@ -11,6 +11,7 @@
     <!-- кирилизиран font -->
    <link href="http://bg.allfont.net/allfont.css?fonts=capture-it" rel="stylesheet" type="text/css" />
 
+
     <title>uniGo</title>
 
     <!-- Bootstrap Core CSS -->
@@ -26,11 +27,14 @@
 
     <!-- Theme CSS -->
     <link href="css/creative.min.css" rel="stylesheet">
-<!-- Custom jquery autocomplete -->
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
+      <!-- Custom jquery autocomplete -->
+
+      <!-- Include the plugin's CSS and JS about forms -->
+<script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+<link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css"/>
+
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -48,6 +52,9 @@
 background-color:#42adf4 ;
 border-color:#42adf4;
 }
+#specialhr {
+border-color:#42adf4;
+}
 #colori {
   color: #42adf4 ;
 }
@@ -57,39 +64,15 @@ border-color:#42adf4;
 #onlysection {
 background-color:  #42adf4 ;
 }
+.blue {
+  color:#42adf4 ;
+}
 
 </style>
 <script>
-  $( function() {
-    var availableTags = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
-    ];
-    $( "#tags" ).autocomplete({
-      source: availableTags
-    });
-  } );
-  </script>
+sheet = document.getElementById(styleSheetId)
+sheet.parentNode.removeChild(sheet)
+</script>
 </head>
 
 <body id="page-top">
@@ -205,8 +188,9 @@ background-color:  #42adf4 ;
 <!-- -->
                 <h1><p class="mainfont"  id="mainsize">Опитайте на момента!</p></h1>
                 <div class="ui-widget">
-  <label for="tags">Въведете вашите силни страни и предпoчитания</label>
-  <input id="tags">
+                  <div id="magicsuggest"></div>
+                      </div>
+
 </div>
                 <!--<a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">!</a> -->
             </div>
@@ -217,17 +201,17 @@ background-color:  #42adf4 ;
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-                </div>
+                    <h2 class="section-heading">Посочи ни твоя интерес</h2>
+                    <hr id="specialhr">
+
+
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p>123-456-6789</p>
+                    <p class="blue">+359 863 6661</p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                    <p><a href="mailto:your-email@your-domain.com" class="blue">unigo@gmail.com</a></p>
                 </div>
             </div>
         </div>
@@ -242,7 +226,7 @@ background-color:  #42adf4 ;
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
 
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
